@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "array": "c",
+        "any": "c",
+        "string_view": "c",
+        "span": "c",
+        "type_traits": "c",
+        "queue.h": "c",
+        "dequeue_all.h": "c"
+    }
+}

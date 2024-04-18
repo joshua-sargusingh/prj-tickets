@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtickets_lib.a CMakeFiles/tickets_lib.dir/src/new_ticket.c.o CMakeFiles/tickets_lib.dir/src/enqueue.c.o CMakeFiles/tickets_lib.dir/src/dequeue_all.c.o
+/usr/bin/ranlib libtickets_lib.a
