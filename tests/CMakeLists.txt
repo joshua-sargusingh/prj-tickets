@@ -1,24 +1,25 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.14)
 
-include_directories(/home/joshua/googletest/googletest/include)
+enable_testing()
 
-# Google Test settings
-set(BUILD_GMOCK OFF CACHE BOOL "Builds the googlemock subproject" FORCE)
-set(INSTALL_GTEST OFF CACHE BOOL "Enable installation of googletest." FORCE)
+# Fetch the Google Test framework
+include(FetchContent)
+message(STATUS "Fetching Google Test...")
+FetchContent_Declare(
+  googletest
+  GIT_REPOSITORY https://github.com/google/googletest
+  GIT_TAG v1.14.0
+  GIT_PROGRESS TRUE
+  )
+FetchContent_MakeAvailable(googletest)
 
 # Include directories for Google Test
-find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
-
 # Add your test executable
-add_executable(test_tickets test_tickets.c)
+add_executable(test_tickets test_tickets.cc)
 
 # Link the test executable with Google Test and the library target
-target_link_libraries(test_tickets GTest::Main pthread)
+target_link_libraries(test_tickets tickets_lib GTest::gtest_main GTest::gtest)
 
-# Add test
-# If you don't have a separate test file, you can directly write tests in your main.c file
-add_test(
-    NAME test_tickets
-    COMMAND test_tickets
-)
+include(GoogleTest)
+gtest_discover_tests(test_tickets)
