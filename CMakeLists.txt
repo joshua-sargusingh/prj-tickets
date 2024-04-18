@@ -1,10 +1,12 @@
 #min version
 cmake_minimum_required(VERSION 3.22.1)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 #project name
 project (
     tickets
-    C
+    LANGUAGES CXX C
 )
 
 #create library from common source files
