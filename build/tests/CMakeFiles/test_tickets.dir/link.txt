@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/test_tickets.dir/test_tickets.c.o -o test_tickets  -lpthread /usr/local/lib/libgtest_main.a /usr/local/lib/libgtest.a 
