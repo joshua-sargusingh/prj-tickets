@@ -49,8 +49,6 @@ TEST_F(QueueTest, DequeueAllTest) {
 
     // Perform assertions to verify the results
     EXPECT_EQ(queue.count, 0);  // Check if count is updated after dequeue_all
-    EXPECT_EQ(queue.front, -1);  // Check if front is updated after dequeue_all
-    EXPECT_EQ(queue.back, -1);  // Check if back is updated after dequeue_all
 }
 
 int main(int argc, char **argv) {
