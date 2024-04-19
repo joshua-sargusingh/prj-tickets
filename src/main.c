@@ -15,10 +15,15 @@ int main() {
 
     int ticket_count = 0;
 
-    printf("How many tickets do you want?\n");
+    printf("How many tickets (0-10) do you want?\n");
 
-    if (scanf("%d", &ticket_count) != 1 || ticket_count <= 0) {
-        printf("Invalid entry or non-positive number.\n");
+    if (scanf("%d", &ticket_count) != 1) {
+        printf("Invalid entry.\n");
+        return 1;  // Return 1 to indicate failure
+    }
+
+    if (ticket_count <= 0 || ticket_count > 10) {
+        printf("Invalid amount of tickets.\n");
         return 1;  // Return 1 to indicate failure
     }
 
