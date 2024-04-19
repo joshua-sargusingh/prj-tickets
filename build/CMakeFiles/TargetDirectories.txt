@@ -1,7 +1,0 @@
-/home/joshua/prj-tickets/build/CMakeFiles/tickets_lib.dir
-/home/joshua/prj-tickets/build/CMakeFiles/main.dir
-/home/joshua/prj-tickets/build/CMakeFiles/edit_cache.dir
-/home/joshua/prj-tickets/build/CMakeFiles/rebuild_cache.dir
-/home/joshua/prj-tickets/build/tests/CMakeFiles/test_tickets.dir
-/home/joshua/prj-tickets/build/tests/CMakeFiles/edit_cache.dir
-/home/joshua/prj-tickets/build/tests/CMakeFiles/rebuild_cache.dir
