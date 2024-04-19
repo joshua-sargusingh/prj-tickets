@@ -18,6 +18,7 @@ add_library(tickets_lib
 
 #include the include folder
 target_include_directories(tickets_lib PUBLIC ${CMAKE_SOURCE_DIR}/include)
+target_compile_options(tickets_lib PUBLIC -g3 -O0)
 
 # Add executable and specify the source files
 add_executable(main src/main.c)

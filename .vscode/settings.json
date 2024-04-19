@@ -7,6 +7,7 @@
         "span": "c",
         "type_traits": "c",
         "queue.h": "c",
-        "dequeue_all.h": "c"
+        "dequeue_all.h": "c",
+        "new_ticket.h": "c"
     }
 }
