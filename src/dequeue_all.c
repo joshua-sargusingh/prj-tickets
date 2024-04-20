@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "dequeue_all.h"
+#include "queue.h"
 
 #define SIZE 10
 

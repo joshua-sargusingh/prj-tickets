@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "enqueue.h"
+#include "queue.h"
 
 #define SIZE 10
 

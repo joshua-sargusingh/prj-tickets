@@ -3,8 +3,6 @@
 extern "C" {
 #include "queue.h"
 #include "new_ticket.h"
-#include "enqueue.h"
-#include "dequeue_all.h"
 }
 
 // Test fixture for Queue related tests
